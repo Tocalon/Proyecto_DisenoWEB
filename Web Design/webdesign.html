@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Acebo Realtors</title>
+        <style>
+            h1{
+                font-size: 40px;
+                font-family: Roboto;
+            }
+            h2{
+                font-size: 30px;
+                font-family: Roboto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to Acebo Group Home Page</h1>
+        <img src="/Users/joseacevedo/Desktop/Web%20Design/webdesign.html/static/banner_html.jpg" height="320">
+    </body>
+    <h2>
+         Nuestra visión 
+         <p>
+            Nuestro proposito como empresa es darte la mejor oportunidad de conseguir la propiedad de tus sueños de forma confiable y segura. Con más de 10 años de experiencia en el negocio, buscamos darle un enfoque joven a los bienes raíces. 
+         </p>
+    </h2>
+    <h2>
+        Propiedades 
+        <p>
+             {%for propertie in propertie%}
+             <div>{{propertie["Name"]}</div>
+            {%endfor%} 
+        </p>
+   </h2>
+
+</html>
